@@ -83,7 +83,9 @@ function App() {
                 <div className="game-popup">
                     <div className="game-popup__title">Game Title</div>
                     <div className="game-popup__date">12 Jan 2019</div>
-                    <div className="game-popup__image"/>
+                    <div className="game-popup__image">
+                        <img className="game-popup__image__img" src="https://images.igdb.com/igdb/image/upload/t_screenshot_med/scagdp.jpg" alt="Game Screenshot"/>
+                    </div>
                     <div className="game-popup__rating">
                         Overall Rating:<br/>
                         <span className="rating_positive">Very Positive</span> (based on 15,356 reviews)
@@ -122,6 +124,7 @@ function App() {
                     </div>
                     <div className="banner-section__row">
                         <article className="banner">
+                            <img className="banner__background" src="https://images.igdb.com/igdb/image/upload/t_screenshot_big/scf2s1.jpg" alt="Game Banner"/>
                             <div className="banner__rating">94</div>
                             <div className="banner__tag-container">
                                 <div className="banner__tag">free to play</div>
@@ -130,6 +133,7 @@ function App() {
                             <div className="banner__title">Gigantic Open Beta Starts Now</div>
                         </article>
                         <article className="banner">
+                            <img className="banner__background" src="https://images.igdb.com/igdb/image/upload/t_screenshot_big/scagdq.jpg" alt="Game Banner"/>
                             <div className="banner__rating">87</div>
                             <div className="banner__tag-container">
                                 <div className="banner__tag">action</div>
@@ -139,6 +143,7 @@ function App() {
                             <div className="banner__title">Elden Ring Is Now Available</div>
                         </article>
                         <article className="banner">
+                            <img className="banner__background" src="https://images.igdb.com/igdb/image/upload/t_screenshot_big/sccrgj.jpg" alt="Game Banner"/>
                             <div className="banner__rating">89</div>
                             <div className="banner__tag-container">
                                 <div className="banner__tag">fighting</div>
@@ -156,7 +161,9 @@ function App() {
                     <div className="thumb-section__row">
                         <div className="thumb-container">
                             <article className="thumb">
-                                <div className="thumb__cover"/>
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
                                 <div className="thumb__info">
                                     <div className="thumb__title">Guilty Gear Strive</div>
                                     <div className="thumb__genre">Fighting, Anime</div>
@@ -169,7 +176,9 @@ function App() {
                         </div>
                         <div className="thumb-container">
                             <article className="thumb">
-                                <div className="thumb__cover"/>
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
                                 <div className="thumb__info">
                                     <div className="thumb__title">Guilty Gear Strive</div>
                                     <div className="thumb__genre">Fighting, Anime</div>
@@ -182,7 +191,9 @@ function App() {
                         </div>
                         <div className="thumb-container">
                             <article className="thumb">
-                                <div className="thumb__cover"/>
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
                                 <div className="thumb__info">
                                     <div className="thumb__title">Guilty Gear Strive</div>
                                     <div className="thumb__genre">Fighting, Anime</div>
@@ -195,7 +206,9 @@ function App() {
                         </div>
                         <div className="thumb-container">
                             <article className="thumb">
-                                <div className="thumb__cover"/>
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
                                 <div className="thumb__info">
                                     <div className="thumb__title">Guilty Gear Strive</div>
                                     <div className="thumb__genre">Fighting, Anime</div>
@@ -208,7 +221,9 @@ function App() {
                         </div>
                         <div className="thumb-container">
                             <article className="thumb">
-                                <div className="thumb__cover"/>
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
                                 <div className="thumb__info">
                                     <div className="thumb__title">Guilty Gear Strive</div>
                                     <div className="thumb__genre">Fighting, Anime</div>
@@ -221,7 +236,9 @@ function App() {
                         </div>
                         <div className="thumb-container">
                             <article className="thumb">
-                                <div className="thumb__cover"/>
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
                                 <div className="thumb__info">
                                     <div className="thumb__title">Guilty Gear Strive</div>
                                     <div className="thumb__genre">Fighting, Anime</div>
@@ -234,7 +251,9 @@ function App() {
                         </div>
                         <div className="thumb-container">
                             <article className="thumb">
-                                <div className="thumb__cover"/>
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
                                 <div className="thumb__info">
                                     <div className="thumb__title">Guilty Gear Strive</div>
                                     <div className="thumb__genre">Fighting, Anime</div>
@@ -247,7 +266,9 @@ function App() {
                         </div>
                         <div className="thumb-container">
                             <article className="thumb">
-                                <div className="thumb__cover"/>
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
                                 <div className="thumb__info">
                                     <div className="thumb__title">Guilty Gear Strive</div>
                                     <div className="thumb__genre">Fighting, Anime</div>
@@ -260,7 +281,9 @@ function App() {
                         </div>
                         <div className="thumb-container">
                             <article className="thumb">
-                                <div className="thumb__cover"/>
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
                                 <div className="thumb__info">
                                     <div className="thumb__title">Guilty Gear Strive</div>
                                     <div className="thumb__genre">Fighting, Anime</div>
@@ -279,105 +302,141 @@ function App() {
                         <div className="banner-section__more-button">See More</div>
                     </div>
                     <div className="thumb-section__row">
-                        <article className="thumb">
-                            <div className="thumb__cover"/>
-                            <div className="thumb__info">
-                                <div className="thumb__title">Guilty Gear Strive</div>
-                                <div className="thumb__genre">Fighting, Anime</div>
-                                <div className="thumb__platforms">
-                                    <Windows className="thumb__platform-icon"/>
-                                    <Steam className="thumb__platform-icon"/>
+                        <div className="thumb-container">
+                            <article className="thumb">
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
                                 </div>
-                            </div>
-                        </article>
-                        <article className="thumb">
-                            <div className="thumb__cover"/>
-                            <div className="thumb__info">
-                                <div className="thumb__title">Guilty Gear Strive</div>
-                                <div className="thumb__genre">Fighting, Anime</div>
-                                <div className="thumb__platforms">
-                                    <Windows className="thumb__platform-icon"/>
-                                    <Steam className="thumb__platform-icon"/>
+                                <div className="thumb__info">
+                                    <div className="thumb__title">Guilty Gear Strive</div>
+                                    <div className="thumb__genre">Fighting, Anime</div>
+                                    <div className="thumb__platforms">
+                                        <Windows className="thumb__platform-icon"/>
+                                        <Steam className="thumb__platform-icon"/>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-                        <article className="thumb">
-                            <div className="thumb__cover"/>
-                            <div className="thumb__info">
-                                <div className="thumb__title">Guilty Gear Strive</div>
-                                <div className="thumb__genre">Fighting, Anime</div>
-                                <div className="thumb__platforms">
-                                    <Windows className="thumb__platform-icon"/>
-                                    <Steam className="thumb__platform-icon"/>
+                            </article>
+                        </div>
+                        <div className="thumb-container">
+                            <article className="thumb">
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
                                 </div>
-                            </div>
-                        </article>
-                        <article className="thumb">
-                            <div className="thumb__cover"/>
-                            <div className="thumb__info">
-                                <div className="thumb__title">Guilty Gear Strive</div>
-                                <div className="thumb__genre">Fighting, Anime</div>
-                                <div className="thumb__platforms">
-                                    <Windows className="thumb__platform-icon"/>
-                                    <Steam className="thumb__platform-icon"/>
+                                <div className="thumb__info">
+                                    <div className="thumb__title">Guilty Gear Strive</div>
+                                    <div className="thumb__genre">Fighting, Anime</div>
+                                    <div className="thumb__platforms">
+                                        <Windows className="thumb__platform-icon"/>
+                                        <Steam className="thumb__platform-icon"/>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-                        <article className="thumb">
-                            <div className="thumb__cover"/>
-                            <div className="thumb__info">
-                                <div className="thumb__title">Guilty Gear Strive</div>
-                                <div className="thumb__genre">Fighting, Anime</div>
-                                <div className="thumb__platforms">
-                                    <Windows className="thumb__platform-icon"/>
-                                    <Steam className="thumb__platform-icon"/>
+                            </article>
+                        </div>
+                        <div className="thumb-container">
+                            <article className="thumb">
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
                                 </div>
-                            </div>
-                        </article>
-                        <article className="thumb">
-                            <div className="thumb__cover"/>
-                            <div className="thumb__info">
-                                <div className="thumb__title">Guilty Gear Strive</div>
-                                <div className="thumb__genre">Fighting, Anime</div>
-                                <div className="thumb__platforms">
-                                    <Windows className="thumb__platform-icon"/>
-                                    <Steam className="thumb__platform-icon"/>
+                                <div className="thumb__info">
+                                    <div className="thumb__title">Guilty Gear Strive</div>
+                                    <div className="thumb__genre">Fighting, Anime</div>
+                                    <div className="thumb__platforms">
+                                        <Windows className="thumb__platform-icon"/>
+                                        <Steam className="thumb__platform-icon"/>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-                        <article className="thumb">
-                            <div className="thumb__cover"/>
-                            <div className="thumb__info">
-                                <div className="thumb__title">Guilty Gear Strive</div>
-                                <div className="thumb__genre">Fighting, Anime</div>
-                                <div className="thumb__platforms">
-                                    <Windows className="thumb__platform-icon"/>
-                                    <Steam className="thumb__platform-icon"/>
+                            </article>
+                        </div>
+                        <div className="thumb-container">
+                            <article className="thumb">
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
                                 </div>
-                            </div>
-                        </article>
-                        <article className="thumb">
-                            <div className="thumb__cover"/>
-                            <div className="thumb__info">
-                                <div className="thumb__title">Guilty Gear Strive</div>
-                                <div className="thumb__genre">Fighting, Anime</div>
-                                <div className="thumb__platforms">
-                                    <Windows className="thumb__platform-icon"/>
-                                    <Steam className="thumb__platform-icon"/>
+                                <div className="thumb__info">
+                                    <div className="thumb__title">Guilty Gear Strive</div>
+                                    <div className="thumb__genre">Fighting, Anime</div>
+                                    <div className="thumb__platforms">
+                                        <Windows className="thumb__platform-icon"/>
+                                        <Steam className="thumb__platform-icon"/>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-                        <article className="thumb">
-                            <div className="thumb__cover"/>
-                            <div className="thumb__info">
-                                <div className="thumb__title">Guilty Gear Strive</div>
-                                <div className="thumb__genre">Fighting, Anime</div>
-                                <div className="thumb__platforms">
-                                    <Windows className="thumb__platform-icon"/>
-                                    <Steam className="thumb__platform-icon"/>
+                            </article>
+                        </div>
+                        <div className="thumb-container">
+                            <article className="thumb">
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
                                 </div>
-                            </div>
-                        </article>
+                                <div className="thumb__info">
+                                    <div className="thumb__title">Guilty Gear Strive</div>
+                                    <div className="thumb__genre">Fighting, Anime</div>
+                                    <div className="thumb__platforms">
+                                        <Windows className="thumb__platform-icon"/>
+                                        <Steam className="thumb__platform-icon"/>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div className="thumb-container">
+                            <article className="thumb">
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
+                                <div className="thumb__info">
+                                    <div className="thumb__title">Guilty Gear Strive</div>
+                                    <div className="thumb__genre">Fighting, Anime</div>
+                                    <div className="thumb__platforms">
+                                        <Windows className="thumb__platform-icon"/>
+                                        <Steam className="thumb__platform-icon"/>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div className="thumb-container">
+                            <article className="thumb">
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
+                                <div className="thumb__info">
+                                    <div className="thumb__title">Guilty Gear Strive</div>
+                                    <div className="thumb__genre">Fighting, Anime</div>
+                                    <div className="thumb__platforms">
+                                        <Windows className="thumb__platform-icon"/>
+                                        <Steam className="thumb__platform-icon"/>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div className="thumb-container">
+                            <article className="thumb">
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
+                                <div className="thumb__info">
+                                    <div className="thumb__title">Guilty Gear Strive</div>
+                                    <div className="thumb__genre">Fighting, Anime</div>
+                                    <div className="thumb__platforms">
+                                        <Windows className="thumb__platform-icon"/>
+                                        <Steam className="thumb__platform-icon"/>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div className="thumb-container">
+                            <article className="thumb">
+                                <div className="thumb__cover">
+                                    <img className="thumb__cover-image" src="https://images.igdb.com/igdb/image/upload/t_cover_big/co2lby.jpg" alt="Guilty Gear Strive Cover"/>
+                                </div>
+                                <div className="thumb__info">
+                                    <div className="thumb__title">Guilty Gear Strive</div>
+                                    <div className="thumb__genre">Fighting, Anime</div>
+                                    <div className="thumb__platforms">
+                                        <Windows className="thumb__platform-icon"/>
+                                        <Steam className="thumb__platform-icon"/>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </section>
             </SimpleBar>
