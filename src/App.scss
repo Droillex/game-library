@@ -94,7 +94,6 @@
       }
 
       &-input {
-        //margin-left: auto;
         font-size: 14px;
         width: 100%;
         font-weight: 600;
@@ -306,7 +305,7 @@
   width: 300px;
   padding: 20px;
   top: 290px;
-  left: 1050px;
+  left: 350px;
   background: var(--input-color);
   z-index: 1;
   border-radius: 0 10px 10px 10px;
@@ -328,7 +327,6 @@
     position: relative;
     width: 100%;
     padding-bottom: 62%;
-    background-color: var(--background-color-light);
     margin-bottom: 10px;
     border-radius: 4px;
     overflow: hidden;
