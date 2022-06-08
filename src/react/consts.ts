@@ -1,14 +1,3 @@
-export const GAME_POPUP_WIDTH = 300;
-export const GAME_POPUP_HEIGHT = 550;
-
-export enum EASING {
-  LINEAR = "linear",
-  EASE = "ease",
-  EASE_IN = "ease-in",
-  EASE_OUT = "ease-out",
-  EASE_IN_OUT = "ease-in-out",
-}
-
 export const RATINGS = {
   VERY_POSITIVE: { title: "Very Positive", cssClass: "rating_positive" },
   POSITIVE: { title: "Positive", cssClass: "rating_positive" },
@@ -32,7 +21,7 @@ export const MONTHS = [
   "Dec",
 ];
 
-export const GENRES = [
+const GENRES = [
   { text: "Adventure", id: 31 },
   { text: "Shooter", id: 5 },
   { text: "Fighting", id: 4 },
@@ -45,10 +34,10 @@ export const GENRES = [
   { text: "Visual Novel", id: 34 },
   { text: "MOBA", id: 36 },
 ]
-  .sort((prev, next) => prev.text > next.text ? 1 : -1)
+  .sort((prev, next) => (prev.text > next.text ? 1 : -1))
   .reverse();
 
-export const PLATFORMS = [
+const PLATFORMS = [
   {
     id: 8,
     text: "PlayStation 2",
@@ -138,10 +127,10 @@ export const PLATFORMS = [
     text: "PlayStation",
   },
 ]
-  .sort((prev, next) => prev.text > next.text ? 1 : -1)
+  .sort((prev, next) => (prev.text > next.text ? 1 : -1))
   .reverse();
 
-export const GAME_MODES = [
+const GAME_MODES = [
   { id: 1, text: "Single player" },
   { id: 2, text: "Multiplayer" },
   { id: 3, text: "Co-op" },
@@ -150,10 +139,62 @@ export const GAME_MODES = [
   { id: 6, text: "Battle Royale" },
 ];
 
-export const SORT_PARAMETERS = [
-  {id: "total_rating_count", text: "Votes"},
-  {id: "name", text: "Name"},
-  {id: "total_rating", text: "Rating"},
-  {id: "first_release_date", text: "Release Date"},
-  {id: "hypes", text: "Hypes"}
+const SORT_PARAMETERS = [
+  { id: "total_rating_count", text: "Votes" },
+  { id: "name", text: "Name" },
+  { id: "total_rating", text: "Rating" },
+  { id: "first_release_date", text: "Release Date" },
+  { id: "hypes", text: "Hypes" },
 ];
+
+export const CONDITIONS_CONFIG = [
+  { id: "genres", title: "Genres", options: GENRES },
+  { id: "platforms", title: "Platform", options: PLATFORMS },
+  { id: "game_modes", title: "Game Modes", options: GAME_MODES },
+];
+
+export const SORT_CONFIG = {
+  id: "sort",
+  title: "Sort",
+  options: SORT_PARAMETERS,
+};
+
+export const DEFAULT_SEARCH_CONDITIONS = [
+  "genres != null",
+  "cover != null",
+  "platforms != null",
+  "total_rating_count != null",
+];
+
+export const INITIAL_ITEM_COUNT = 27;
+export const EXTRA_ITEM_COUNT = 18;
+export const LOAD_SCROLL_DELTA = 180;
+
+export const BANNER_IDS = [119133, 11208, 114283];
+export const BANNER_NAMES: { [key: number]: string } = {
+  119133: "Challenge the Elden Lords",
+  11208: "2B or not 2B?",
+  114283: "Steal The Show (Again)",
+};
+
+export const DEFAULT_LAYOUT = {
+  banners: [
+    {
+      title: "Highlights",
+    },
+  ],
+  thumbs: [
+    {
+      title: "Best JRPG's",
+      queryString:
+          "where rating >= 90 & keywords = [521] & genres != null & cover != null;sort total_rating_count desc;limit 18;",
+    },
+    {
+      title: "Popular",
+      queryString:
+          "where rating >= 85 & genres != null & cover != null;sort total_rating_count desc;limit 27;",
+    },
+  ],
+};
+
+export const INITIAL_FILTER_VALUE = SORT_CONFIG.options[0].id;

@@ -14,7 +14,7 @@
   --block-box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.2);
   --banner-box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.3);
   --section-box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.2);
-  --dropdown-box-shadow: 8px 8px 8px 4px rgb(0 0 0 / 20%);
+  --dropdown-box-shadow: 8px 10px 8px 4px rgb(0 0 0 / 20%);
   --banner-columns: 3;
 }
 
@@ -62,13 +62,20 @@
     }
 
     &__nav-link {
-      color: var(--icon-color-disabled);
       font-weight: bold;
-      transition: color .3s ease-in-out;
       padding: 0 21px;
 
-      &:hover {
-        color: var(--icon-color-active);
+      &_active {
+        color: var(--icon-color-disabled);
+        transition: color .3s ease-in-out;
+
+        &:hover {
+          color: var(--icon-color-active);
+        }
+      }
+
+      &_disabled {
+        color: var(--disabled-color);
       }
     }
 
@@ -135,8 +142,15 @@
       position: relative;
     }
 
-    &__icon_default {
-      fill: var(--icon-color-active);
+    &__icon {
+      &_default {
+        cursor: pointer;
+        fill: var(--icon-color-active);
+      }
+      &_disabled {
+        cursor: default;
+        fill: var(--disabled-color);
+      }
     }
 
     &__icon_active {
@@ -156,7 +170,6 @@
     &__svg {
       width: 35%;
       height: 35%;
-      cursor: pointer;
     }
   }
 
@@ -573,6 +586,25 @@
     color: var(--icon-color-active);
     font-weight: bold;
     text-transform: capitalize;
+  }
+}
+
+.thumb-section,
+.banner-section {
+  &__error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-label {
+      color: var(--disabled-color);
+      font-size: 18px;
+    }
+
+    &-img {
+      width: 120px;
+      margin-bottom: 12px;
+    }
   }
 }
 
