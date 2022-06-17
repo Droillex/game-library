@@ -15,7 +15,7 @@ import { IPopupData } from "../components/gamePopup/gamePopup";
 
 export default class Api {
   private static urlBase =
-    "https://circumvent-cors.herokuapp.com/https://api.igdb.com/v4";
+    "";
   private static clientId = "";
   private static bearerToken = "";
 
