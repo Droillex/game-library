@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   Api.setCredentials(
-    "lnb5i5tshcvdjtpxb39d1ltcil43dj",
-    "glk5fmyzru9gh1f42zsbqwqymno9nn"
+    "8wzpcv3pynyoc0djpc2bibx33lt1gj",
+    "m7uvb7bhqjewm1ac9tnfcxl4xexi9w"
   );
 
   const filter = createFilter();
