@@ -107,11 +107,14 @@ export default class Api {
       )});sort id desc;limit ${platformIds.length};`
     );
 
-    const platformsData = platformsNameData.map((pl, idx) => ({
-      id: pl.id,
-      name: pl.name,
-      url: platformLogosData[idx].url,
-    }));
+    const platformsData = platformLogosData.map((pl, idx) => {
+      const plData = platformsNameData.find(item => item.platform_logo === pl.id)
+      return {
+        id: plData?.id || 0,
+        name: plData?.name,
+        url: pl.url
+      }
+    });
 
     return gameData.map((game) => ({
       id: game.id,
@@ -245,9 +248,9 @@ export default class Api {
         .join(", ")});sort id desc;`,
       signal
     );
-    const platforms: IPlatform[] = platformData.map((platform, idx) => ({
-      name: platform.name,
-      url: platformDataLogo[idx].url,
+    const platforms: IPlatform[] = platformDataLogo.map((platform, idx) => ({
+      name: platformData.find(item => item.platform_logo === platform.id)?.name || "unknown",
+      url: platform.url,
     }));
 
     return {
