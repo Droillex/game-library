@@ -15,7 +15,7 @@ import { IPopupData } from "../components/gamePopup/gamePopup";
 
 export default class Api {
   private static urlBase =
-    "";
+    "https://proxy.cors.sh/https://api.igdb.com/v4";
   private static clientId = "";
   private static bearerToken = "";
 
@@ -283,6 +283,7 @@ export default class Api {
       headers: {
         "Client-ID": Api.clientId,
         Authorization: `Bearer ${Api.bearerToken}`,
+        'x-cors-api-key': 'live_56f7772a891bf9e3b66aeaa6fd528a9422e2f1e9a2db322e2a785d95dcc75cd9',
         "Content-Type":
           typeof payload === "string" ? "text/plain" : "application/json",
       },
