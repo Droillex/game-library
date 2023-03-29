@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Game Library Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📖 Overview
+A simple web application project that allows you to select suitable games according to specified filters. Additional information and screenshots are loaded by hovering over the game icon. [Igdb.com API](https://api-docs.igdb.com/) is used for backend queries.
 
-## Available Scripts
+#
+<br/>
 
-In the project directory, you can run:
+指定されたフィルターに従って適切なゲームを選択することができるシンプルなウェブアプリケーションプロジェクトです。追加情報やスクリーンショットは、ゲームアイコンにカーソルを合わせることで読み込まれます。[Igdb.com API](https://api-docs.igdb.com/) は、バックエンドのクエリに使用されています。<br/><br/>
 
-### `npm start`
+### 🚧 Note 🚧<br/>
+Due to API CORS settings the service [proxy.cors.sh](https://cors.sh/) is used to send requests from a third-party resource. Because of this, both data loading time may be increased, and errors may occur when loading data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#
+<br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+API CORSの設定により、サービス[proxy.cors.sh](https://cors.sh/)が第三者のリソースからのリクエストを送信するために使用されます。そのため、データの読み込み時間が長くなったり、データの読み込み時にエラーが発生したりすることがあります。<br/><br/>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📚 Context
+The project was created as part of a university course in web development. The course included the fundamentals of modern JavaScript (ECMASCRIPT 6), debugging, TypeScript, and the basics of development using React. There are several repositories named "task-..." among my repos. It's practical tests to complete alongside the course. The course was organized in three stages: layout, creating the working version on vanilla JS/TS, creating the working version on React using TypeScript. Each participant was assigned a mentor who checked the results of each stage and gave feedback on the code. Due to time constraints and the need to implement several iterations of the project, the project was developed without a mobile version, and cross-browsing was not tested.
 
-### `npm run build`
+#
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+このプロジェクトは、大学のWeb開発に関する授業の一環として作成されました。モダンなJavaScript（ECMASCRIPT 6）の基礎、デバッグ、TypeScript、そしてReactを使った開発の基礎などを学びました。私のレポの中には、「task-...」という名前のレポがいくつかあります。講座と並行してこなす実践的なテストです。コースは、レイアウト、vanilla JS/TSでの作業版作成、TypeScriptを使ったReactでの作業版作成の3段階で構成されていました。各受講者にはメンターが付き、各ステージの結果をチェックし、コードにフィードバックを与えました。時間的な制約と、二度とも同じ機能を実施する必要があったため、プロジェクトはモバイル版なしで開発され、クロスブラウジングのテストは行われませんでした。<br/><br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✨ Layouting 
+The layout was done considering semantic HTML, using the SCSS pre-processor and naming classes according to the BEM methodology. The design of the web application was developed by myself, based on the similar web services.
 
-### `npm run eject`
+#
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+レイアウトはセマンティックHTMLを考慮し、SCSSプリプロセッサを使用し、BEM手法に基づいたクラスの命名を行っています。Webアプリケーションのデザインは、類似のWebサービスをベースに自分で開発しました。<br/><br/>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Layout Stage Result](https://cdn.discordapp.com/attachments/477756091803893760/1090492739579297843/image.png)
+<br/><br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## ⌨️ Vanilla JS/TS
+Since I already had experience with TypeScript at the time of the assignment, I immediately started using it for ease of development. Modern JS syntax such as classes and inheritance, fetch, promise, async/await, etc. was actively used. The code is organized into components by folder for easy navigation, and functions are commented out according to JS Doc. As a result, the organization and quality of the [code was praised by the mentor](https://github.com/Droillex/game-library/pull/3#pullrequestreview-977224780), and the only flaws were the use of alert to warn of errors at runtime.
+The source code of the stage can be found in the [as.derbin/js-code branch](https://github.com/Droillex/game-library/tree/as.derbin/js-code). This version of the project is being hosted [here](https://js-game-library.onrender.com/).
 
-## Learn More
+#
+<br/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+課題の時点ですでにTypeScriptの経験があったため、開発のしやすさを考えてすぐに使い始めました。クラスや継承、fetch、promise、async/awaitなど、最新のJS構文が積極的に使われました。コードはナビゲーションしやすいようにフォルダ単位でコンポーネントに整理し、JS Docに従って関数をコメントアウトしました。その結果、[コードの構成などはメンターに激賞されました](https://github.com/Droillex/game-library/pull/3#pullrequestreview-977224780)。唯一の欠点は、実行時にエラーを警告するためalertを使用していることでした。
+このステージのソースコードは、[as.derbin/js-codeブランチ](https://github.com/Droillex/game-library/tree/as.derbin/js-code)で見ることができます。このバージョンのプロジェクトは、[ここ](https://js-game-library.onrender.com/)でホストされています。<br/><br/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+## 🖥️ React
+The same project was implemented in React with TypeScript, using hooks, functional components and the Spring library for eye-pleasing animations. As in the project code in the previous stage, the React project code was documented in the same way according to JSDoc.
+The source code of the stage can be found in the [as.derbin/game-library-react](https://github.com/Droillex/game-library/tree/as.derbin/game-library-react). This version of the project is being hosted [here](https://react-game-library.onrender.com/).
+
+#
+<br/>
+
+同じプロジェクトをTypeScriptでReactに実装し、フックや関数型コンポーネント、Springライブラリを使って目を引くアニメーションを実現しました。前のステージのプロジェクトコードと同様に、ReactのプロジェクトコードもJSDocに従ってドキュメント化されました。
+このステージのソースコードは、[as.derbin/game-library-react](https://github.com/Droillex/game-library/tree/as.derbin/game-library-react)で見ることができます。このバージョンのプロジェクトは、[ここ](https://react-game-library.onrender.com/)にホストされています。
+
+![React Version](https://cdn.discordapp.com/attachments/477756091803893760/1090498050537033728/image.png)
